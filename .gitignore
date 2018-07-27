@@ -1,0 +1,4 @@
+keystore/*
+geth/*
+!geth/static-nodes.json
+history
