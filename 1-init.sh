@@ -1,1 +1,5 @@
-geth --datadir `pwd`/ init genesis.json
+# Linux/Mac
+# geth --datadir `pwd`/ init genesis.json
+
+# Windows
+geth --datadir "$pwd" init genesis.json
