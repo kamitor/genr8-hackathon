@@ -1,5 +1,5 @@
-# To run on the 1st node
-geth --datadir $(pwd)/ --networkid 420 --port 30303 --rpc --rpcport 8545 --rpccorsdomain "*" --ws --wsport 8546 --wsorigins "*" console --mine
+geth --datadir $(pwd)/ --networkid 15 --port 30304 --rpc --rpcport 8545 --rpccorsdomain "*" --ws --wsport 8546 --wsorigins "*" --unlock "0" --password pass console --mine
+
 
 # we have to make its account
 # > personal.newAccount()
@@ -10,9 +10,6 @@ geth --datadir $(pwd)/ --networkid 420 --port 30303 --rpc --rpcport 8545 --rpcco
 # replace [::] with IP 10.209.10.212
 # telnet 10.209.10.212 30303
 # then add as --bootnodes argument
-
-# To run on joining nodes
-geth --datadir $(pwd)/ --networkid 420 --port 30304 --rpc --rpcport 8545 --rpccorsdomain "*" --ws --wsport 8546 --wsorigins "*" --unlock "0" --password pass console --mine 
 
 
 
